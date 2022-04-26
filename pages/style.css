@@ -1,0 +1,597 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* Todas las paginas */
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.contenedor-uno{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./img/fondobeige);
+    display: flex;
+}
+
+.encabezado{
+    color: #bdde92;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: beige;
+    margin: 5px;
+}
+
+.caja-madre{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    border: 1px solid #bdde92;
+    background-color: #bdde92;
+    color: black;
+    font-size: large;
+    padding: 2px;
+    margin: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section{
+    margin-top: 1px;
+}
+
+.section-p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #bdde92;
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+/* Pie de pagina  */
+footer{
+    display: flex;
+    align-self: flex-end;
+    min-height: auto;
+    }
+    
+    
+    .pie{
+        background-color: olivedrab;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .pie-div1{
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 10px;
+        display: flex;
+        align-self: center;
+        font-size: small;
+    }
+    
+    .pie-div2{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .pie-div2-a{
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        margin: 10px;
+    }
+.comocomprar{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: left;
+}
+
+/* Pagina como comprar */
+
+.comocomprar{
+    margin: 40px;
+    padding: 40px;
+}
+.comocomprara{
+    margin: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.comocomprarc{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #bdde92;
+    color: olivedrab;
+}
+
+.comocomprard{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    background-color: olivedrab;
+    color: #bdde92;
+}
+
+/*  Pagina de contacto */
+
+.formulariodecontacto{
+    margin: 40px;
+    padding: 40px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formulario1{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+    margin: 8px;
+    padding: 8px;
+}
+.nombre{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+}
+
+.apellido{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+}
+
+.algomas{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.opinion{
+    background-color: #bdde92;
+    margin: 20px;
+    padding: 20px;
+}
+
+.terminos{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.limpiar{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+}
+
+.enviar{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bdde92;
+    background-color: olivedrab;
+}
+
+/* Pagina productos */
+
+.productos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #bdde92;
+    color: olivedrab;
+    margin: 2px;
+    padding: 2px;
+}
+
+/* aplicando grid */
+
+.grid-conteiner{
+    border: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(3, 155px);
+    gap: 8px;
+    grid-template-areas: 
+    "noticia-1 noticia-2"
+    "noticia-3 noticia-4"
+    "noticia-5 noticia-5"
+    ;
+    justify-content: center;
+    padding: 2px;
+    ;
+
+}
+
+.noticia-1{
+    grid-area: noticia-1;
+    background-color: #bdde92;
+    font-size: smaller;
+    color: olivedrab;
+    text-align: center;
+    text-size-adjust: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: solid;
+}
+
+.noticia-2{
+    grid-area: noticia-2;
+    background-image: url(./img/piedecama.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.noticia-3{
+    grid-area: noticia-3;
+    background-image: url(./img/cubreedredon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.noticia-4{
+    grid-area: noticia-4;
+    background-color: #bdde92;
+    font-size: smaller;
+    color: olivedrab;
+    text-align: center;
+    text-size-adjust: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: solid;
+}
+
+.noticia-5{
+    grid-area: noticia-5;
+    background-color: #bdde92;
+    font-size: smaller;
+    color: olivedrab;
+    text-align: center;
+    text-size-adjust: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: solid;
+    height: 20px;
+}
+
+
+/* pagina quienes somos */
+.queinessomos-a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #bdde92;
+    color: olivedrab;
+}
+
+.quienessomos-b{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #bdde92;
+    color: olivedrab;
+    margin: 35px;
+    padding: 35px;
+    font-size: 30px;
+}
+
+.quienessomos-c{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: beige;
+    color: olivedrab;
+    margin: 40px;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.quienessomos-d{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #bdde92;
+    color: olivedrab;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+        /* Vista Mobile  para todas las paginas*/
+        @media screen and (max-width: 320px){
+            .encabezado{
+                color: #bdde92;
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: beige;
+            }
+            .caja-madre{
+                text-align: center;
+                margin: 1px;
+                padding: 1px;
+                justify-content: space-between;
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid #bdde92;
+                background-color: #bdde92;
+                color: black;
+                font-size: small;
+                justify-content: space-evenly;
+                padding: 1px;
+                margin: 1spx;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            
+            .section{
+                margin-top: 1px;
+            }
+            
+            .section-p{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: small;
+                background-color: #bdde92;
+                margin: 1px;
+                text-align: center;
+            }
+            
+            .caja-madre{
+                padding: 2px;
+                margin: 2px;
+            }
+/* para la pagina como comprar */
+            .comocomprar{
+                padding: 2px;
+                margin: 2px;
+            }
+
+            .comocomprarc{
+                font-size: small;
+            }
+
+            .comocomprard{
+                font-size: small;
+            }
+
+            /* para pagina contacto */
+            .formulariodecontacto{
+                margin: 1px;
+                padding: 1px;
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            
+            .formulario1{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+                margin: 1px;
+                padding: 1px;
+            }
+            .nombre{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+            }
+            
+            .apellido{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+            }
+            
+            .algomas{
+                font-size: medium;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+                padding: 10px;
+                margin: 10px;
+                text-align: left;
+            }
+            
+            .opinion{
+                background-color: #bdde92;
+                margin: 30px;
+                padding: 30px;
+            }
+            
+            .terminos{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+            text-align: left;
+            }
+            
+            
+            .limpiar{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+            }
+            
+            .enviar{
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #bdde92;
+                background-color: olivedrab;
+            }
+
+            .nombre1{
+                margin: 2px;
+                padding: 2px;
+                width: 50px;
+            }
+
+            .apellido1{
+                margin: 2px;
+                padding: 2px;
+                width: 50px;
+            }
+
+            /* para pagina productos */
+            .productos{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: #bdde92;
+                color: olivedrab;
+                margin: 1px;
+                padding: 1px;
+                font-size: small;
+            }
+            .grid-conteiner{
+                display: grid;
+                grid-template-columns: repeat(2, 25%);
+                grid-template-rows: repeat(3, 155px);
+                gap: 3px;
+                grid-template-areas: 
+                "noticia-1 noticia-1"
+                "noticia-4 noticia-4"
+                "noticia-5 noticia-5"
+                ;
+                justify-content: center;
+                padding: 1px;
+                ;
+            
+            }
+            
+            .noticia-1{
+                grid-area: noticia-1;
+                background-color: #bdde92;
+                font-size: 10px;
+                color: olivedrab;
+                text-align: center;
+                height: 70px;
+                margin: 1px;
+                padding: 2px;
+                text-decoration: solid;
+            }
+            
+            .noticia-4{
+                grid-area: noticia-4;
+                background-color: #bdde92;
+                font-size: 10px;
+                color: olivedrab;
+                text-align: center;
+                height: 70px;
+                margin: 1px;
+                padding: 2px;
+                text-decoration: solid;
+            }
+            
+            .noticia-5{
+                grid-area: noticia-5;
+                background-color: #bdde92;
+                font-size: 10px;
+                color: olivedrab;
+                text-align: center;
+                height: 70px;
+                margin: 1px;
+                padding: 2px;
+                text-decoration: solid;
+            }
+            /* para pagina quienes somos */
+
+            .queinessomos-a{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: #bdde92;
+                color: olivedrab;
+                font-size: 25px;
+                margin: 20px;
+                padding: 30px;
+            }
+            
+            .quienessomos-b{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: #bdde92;
+                color: olivedrab;
+                margin: 12px;
+                padding: 12px;
+                font-size: 20px;
+            }
+            
+            .quienessomos-c{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: beige;
+                color: olivedrab;
+                margin: 10px;
+                padding: 10px;
+                font-size:20px;
+            }
+            
+            .quienessomos-d{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: #bdde92;
+                color: olivedrab;
+                margin: 15px;
+                padding: 15px;
+                font-size: 20px;
+            }
+
+            /* para todas las paginas */
+            .pie{
+                background-color: olivedrab;
+                width: 100%;
+                height: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .pie-div1{
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-left: 5px;
+                display: flex;
+                align-self: center;
+                font-size: 7px;
+            }
+            .pie-div2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: small;
+            }
+            .pie-div2-a{
+                color: black;
+                font-family:Verdana, Geneva, Tahoma, sans-serif ;
+                margin: 0px;
+                font-size: 5px;
+            }
+        }

@@ -1,0 +1,303 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./img/fondobeige);
+    display: flex;
+}
+
+/* encabezado y titulo */
+.encabezado{
+    color: #bdde92;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: beige;
+    margin: 5px;
+}
+
+.caja-madre{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    border: 1px solid #bdde92;
+    background-color: #bdde92;
+    color: black;
+    font-size: large;
+    padding: 2px;
+    margin: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section{
+    margin-top: 1px;
+}
+
+.section-p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #bdde92;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.caja-madre{
+    padding: 15px;
+    margin: 15px;
+}
+
+/* aplicando grid */
+
+.grid-conteiner{
+    border: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 155px);
+    gap: 8px;
+    grid-template-areas: 
+    "noticia-1 noticia-2 noticia-5 noticia-3"
+    "noticia-1 noticia-4 noticia-5 noticia-3"
+    "noticia-1 noticia-4 noticia-6 noticia-6"
+    ;
+
+}
+
+.noticia-1{
+    grid-area: noticia-1;
+    background-image: url(./img/cubrecama.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.noticia-2{
+    grid-area: noticia-2;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: solid;
+    background-color: beige;
+    height: 90px;
+}
+
+.noticia-3{
+    grid-area: noticia-3;
+    background-image: url(./img/almohadon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.noticia-4{
+    grid-area: noticia-4;
+    background-image: url(./img/cubreedredon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.noticia-5{
+    grid-area: noticia-5;
+    background-image: url(./img/cubreedredon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:contain;
+        background-repeat: no-repeat;
+}
+
+.noticia-6{
+    grid-area: noticia-6;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: solid;
+    background-color: beige;
+    height: 50px;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+
+/* Pie de pagina  */
+footer{
+display: flex;
+align-self: flex-end;
+min-height: auto;
+}
+
+
+.pie{
+    background-color: olivedrab;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie-div1{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    display: flex;
+    align-self: center;
+    font-size: small;
+}
+
+.pie-div2{
+    display: flex;
+    flex-direction: row;
+}
+
+.pie-div2-a{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin: 10px;
+}
+
+        /* Vista Mobile */
+        @media screen and (max-width: 320px){
+            .encabezado{
+                color: #bdde92;
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: beige;
+            }
+            .caja-madre{
+                text-align: center;
+                margin: 1px;
+                padding: 1px;
+                justify-content: space-between;
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid #bdde92;
+                background-color: #bdde92;
+                color: black;
+                font-size: small;
+                justify-content: space-evenly;
+                padding: 1px;
+                margin: 1spx;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            
+            .section{
+                margin-top: 1px;
+            }
+            
+            .section-p{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: small;
+                background-color: #bdde92;
+                margin: 1px;
+                text-align: center;
+            }
+            
+            .caja-madre{
+                padding: 2px;
+                margin: 2px;
+            }
+            
+            
+            .grid-conteiner{
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(4, 110px);
+                gap: 2px;
+                grid-template-areas: 
+                "noticia-1 noticia-6"
+                "noticia-1 noticia-5"
+                "noticia-2 noticia-4"
+                "noticia-2 noticia-4"
+                ;
+            }
+            .noticia-1{
+                grid-area: noticia-1;
+                background-image: url(./img/cubrecama.jpg);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: contain;
+            }
+            }
+            .noticia-2{
+                grid-area: noticia-2;
+                font-size: large;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                text-decoration: solid;
+                background-color: beige;
+                height: 150px;
+            }
+            
+            .noticia-4{
+                grid-area: noticia-4;
+                background-image: url(./img/cubreedredon.jpg);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .noticia-5{
+                grid-area: noticia-5;
+                background-image: url(./img/cubreedredon.jpg);
+                background-position: center;
+                background-attachment: fixed;
+                background-size:contain;
+                    background-repeat: no-repeat;
+            }
+            .noticia-6{
+                grid-area: noticia-6;
+                font-size: large;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                text-decoration: solid;
+                background-color: beige;
+                height: 70px;
+            }
+
+
+            .pie{
+                background-color: olivedrab;
+                width: 100%;
+                height: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .pie-div1{
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-left: 5px;
+                display: flex;
+                align-self: center;
+                font-size: 7px;
+            }
+            .pie-div2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: small;
+            }
+            .pie-div2-a{
+                color: black;
+                font-family:Verdana, Geneva, Tahoma, sans-serif ;
+                margin: 0px;
+                font-size: 5px;
+            }
